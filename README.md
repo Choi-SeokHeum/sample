@@ -34,3 +34,9 @@ In Data Store directory of CDL, build & install using following command:
     $ make
     $ sudo make install
     
+#### Test Application build & install
+Navigate to the test directory of DataStoreTestApp, and build & install using following command:
+
+        $ qmake -r -spec linux-g++
+        $ make
+        # make install
