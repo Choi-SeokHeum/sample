@@ -40,3 +40,20 @@ Navigate to the test directory of DataStoreTestApp, and build & install using fo
         $ qmake -r -spec linux-g++
         $ make
         # make install
+
+After the installation, you can find binary(Data Store Test Application) and other files for configuration and generated Store_Config JSON in deploy directory
+
+# Usage
+
+### Run
+Prepare one terminal windows and navigate to the deploy directory of test.
+Before run test application, add library search path for `DataStoreManager` library to the `LD_LIBRARY_PATH` using following command in terminal:
+
+        $ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
+
+Run Data Store Test application on one terminal
+
+        $ ./DataStoreTestApp
+        
+The DataStoreTestApp generates cdl sample sata randomly, and call the storeData function located in DataStoreManager.
+On DataStoreManager side, you can check the created json file and db file which manages the lists of files on the storage.
