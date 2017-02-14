@@ -56,4 +56,4 @@ Run Data Store Test application on one terminal
         $ ./DataStoreTestApp
         
 The DataStoreTestApp generates cdl sample sata randomly, and call the storeData function located in DataStoreManager.
-On DataStoreManager side, you can check the created json file and db file which manages the lists of files on the storage.
+On DataStoreManager side, you can check the created json file and db file which manages the lists of files in the storage.
