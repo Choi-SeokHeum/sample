@@ -51,10 +51,38 @@ Before run test application, add library search path for `DataStoreManager` libr
 
         $ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
 
-Run Data Store Test application on one terminal
+Run Data Store Test application on terminal
 
         $ cd ../deploy
         $ ./DataStoreTestApp
         
 The DataStoreTestApp generates cdl sample sata randomly, and call the storeData function located in DataStoreManager.
 On DataStoreManager side, you can check the created json file and db file which manages the lists of files in the storage.
+
+### Configuration file for data store
+Configuration file element explanation:
+* File Path 
+ - Insert a full path to store the needed files in DataStore module.
+* MaxFileSize
+ - Insert a size that can store the maximum amount of data in the file.
+* MaxSotrageSize
+ - Insert a size that can store the maximum amount of file in the storage.
+* MaxFileExpirePeriod
+ - Insert the maximum expiration period for files that can be stored in the storage.
+* TransactionBufferSize
+ - Insert the size of data to be stored in file at once.
+
+Example
+
+    {
+         "FilePath": "/home/user/test/integration/project/cdl-daemon/DataStore/DBFileDir",
+         "MaxFileSize": "15",                     //unit : kByte
+         "MaxStorageSize": "100",                 //unit : kByte
+         "MaxFileExpirePeriod": "60",             //unit : minutes
+         "TransactionBufferSize": "20"            //unit : counts
+    }
+
+### Environment variables
+Data Store needs a environment variable for run such as configuration file for data store.
+* STORE_CONFIG_FILE
+user defined configuration file for data store.
