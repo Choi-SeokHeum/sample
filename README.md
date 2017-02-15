@@ -85,4 +85,4 @@ Example
 ### Environment variables
 Data Store needs a environment variable for run such as configuration file for data store.
 * STORE_CONFIG_FILE
- - user defined configuration file for data store.
+ - user defined configuration file for data store(e.g store_config_file.json)
