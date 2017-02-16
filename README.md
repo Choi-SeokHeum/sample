@@ -76,7 +76,7 @@ Configuration file element explanation:
 Example
 
     {
-         "DataStoreLocation": "/home/user/test/integration/project/cdl-daemon/DataStore/DBFileDir/",
+         "DataStoreLocation": "/home/user/test/integration/project/cdl-daemon/DataStore/StoreCDLDataFile/",
          "MaxFileSize": "15",                     //unit : kByte
          "MaxStorageSize": "100",                 //unit : kByte
          "MaxFileExpirePeriod": "60",             //unit : minutes
