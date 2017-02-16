@@ -61,8 +61,9 @@ On DataStoreManager side, you can check the created json file and db file which 
 
 ### Configuration file for data store
 Configuration file element explanation:
-* File Path 
- - Insert a full path to store the needed files in DataStore module.
+* DataStoreLocation 
+ - Insert a full path to store the needed files in DataStore module(Storage Path).
+ - Insert the "/" character at the end of the path.
 * MaxFileSize
  - Insert a size that can store the maximum amount of data in the file.
 * MaxSotrageSize
@@ -75,7 +76,7 @@ Configuration file element explanation:
 Example
 
     {
-         "FilePath": "/home/user/test/integration/project/cdl-daemon/DataStore/DBFileDir",
+         "DataStoreLocation": "/home/user/test/integration/project/cdl-daemon/DataStore/DBFileDir/",
          "MaxFileSize": "15",                     //unit : kByte
          "MaxStorageSize": "100",                 //unit : kByte
          "MaxFileExpirePeriod": "60",             //unit : minutes
