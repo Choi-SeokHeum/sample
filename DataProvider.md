@@ -36,7 +36,7 @@ In DataProvider directory of CDL, build & install using following command:
     $ sudo make install
     
 #### Test Application build & install
-Navigate to the test directory of DataProviderTestApp, and build & install using following command:
+Navigate to the test directory of DataProviderTestApp/ DBusClientTestApp(1~2), and build & install using following command:
 
     $ qmake -r -spec linux-g++
     $ make
@@ -58,3 +58,11 @@ Run DataProvider Test application on terminal
       $ ./DataProviderTestApp
       
 The DataProviderTestApp generates cdl sample data randomly, and call the provideData function located in DataProvider.
+
+Run DBusClientTestApp1 / DBusClientTestApp2 application on each terimals
+
+      $ ./DBusClientTestApp1
+      $ ./DBusClientTestApp2
+      
+DBusClientTestApp(1 ~ 2) are provided the data from the DataProvider according to the information of data requested at the time of registration.
+Also, they can be provided wantede data by requesting when they need.
