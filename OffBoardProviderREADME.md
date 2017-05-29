@@ -40,7 +40,7 @@ Navigate to the test directory of OffBoardProvider, and build & install using fo
         $ make
         $ make install
         
-After the installation, you can find binary(OffBoardProviderTestApp) and other files(sample JSON files) to be transderred to the RVIServer in deploy directory.
+After the installation, you can find binary(OffBoardProviderTestApp) and other files(5 sample JSON files) to be transderred to the RVIServer in deploy directory.
 
 ### Run
 Prepare a terminal window and navigate to the deploy directory of test.
