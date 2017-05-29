@@ -65,4 +65,4 @@ Run DBusClientTestApp1 / DBusClientTestApp2 application on each terimals
       $ ./DBusClientTestApp2
       
 DBusClientTestApp(1 ~ 2) are provided the data from the DataProvider according to the information of data requested at the time of registration.
-Also, they can be provided wantede data by requesting when they need.
+Also, they can be provided needed data by requesting when they need.
