@@ -63,5 +63,13 @@ In CDLDaemon directory of CDL, build & install using following command:
         $ make
         $ sudo make install
 
-After the installation, you can find a binary(CDLDaemon) and other files for configuration and generated VSS JSON, VSI files in deploy directory.
-Also you can find python files for RVI in rvi_core(/usr/lib/rvi_core) directory.
+After the installation, you can find a binary(CDLDaemon) and other files for configuration and generated VSS JSON, VSI files in deploy directory. Also you can find python files for RVI in rvi_core(/usr/lib/rvi_core) directory.
+
+### Run
+Prepare a terminal window and navigate to the deploy directory of test.
+Before run application, run the `RVIServer` on the CDL(car-data-logger) to confirm the transferred JSON file between CDLDaemon and external server.
+
+Run CDLDaemon on the terminal.
+
+        $ ../deploy
+        $ ./CDLDaemon
