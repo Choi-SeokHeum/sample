@@ -17,11 +17,15 @@ There are some modules that can operate with `CDL-Daemon` such as `Cluster`, `CA
   
 ## Operation
 ### Operated device
-- RaspberryPi 3
-   * CAN Router
-   * CDLDaemon
-   * Cluster
-- DeskTop
-   * RVIServer
+#### DeskTop
+`GENIVI VehicleSimulator` is operated on:
+* Windows 10
+#### RaspberryPi 3
+* CAN Router
+* CDLDaemon
+* Cluster
+#### DeskTop
+`RVIServer` is operated on:
+* Ubuntu 14.04 64bit
   
   
