@@ -41,7 +41,7 @@ Build :
       
 ##### Target Board
 Set the Yocto ADT environment:
-    
+
       $  source ${RPI_ADT_DIR}/environment-setup-cortexa7hf-neon-vfpv4-poky-linux-gnueabi
       
 Build:
