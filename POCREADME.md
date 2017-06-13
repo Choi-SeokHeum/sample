@@ -12,5 +12,5 @@ There are some modules that can operate with `CDL-Daemon` such as `Cluster`, `CA
   * Receive the vehicle data(speed, rpm) from `OnBoardProvider` in the `CDLDaemon` with DBus.
   * Display the vehicle data(speed, rpm).
 - RVIServer
-  * Receive the data(file of JSON format) from the `OffBoardProvider` using `RVI` (external(OffBoard) Server).
+  * Receive the data(file of JSON format) from the `OffBoardProvider` using `RVI`.
   * Display the transferred data(file of JSON format) with a graph (Historical View).
