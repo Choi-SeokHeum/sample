@@ -14,3 +14,13 @@ There are some modules that can operate with `CDL-Daemon` such as `Cluster`, `CA
 - RVIServer
   * Receive the data(file of JSON format) from the `OffBoardProvider` using `RVI`.
   * Display the transferred data(file of JSON format) with a graph (Historical View).
+  
+  ## Operated Environment
+  ### RaspberryPi 3
+  * CAN Router
+  * CDLDaemon
+  * Cluster
+  ### DeskTop
+  * RVIServer
+  
+  
