@@ -56,7 +56,7 @@ After the installation, you can find binary(CANRouter) in `deploy/arm` or `deplo
 
 ### Run
 #### Build for testing on Desktop
-If you build the CANRouter on Qt Environment, prepare one terminal window and navigate to the `deploy/x86` directory.
+Prepare one terminal window and navigate to the `deploy/x86` directory.
 
       $ cd deploy/x86
       
