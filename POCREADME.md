@@ -19,6 +19,8 @@ There are some modules that can operate with `CDL-Daemon` such as `Cluster`, `CA
 1. Run the `VehicleSimulator`.
 2. Run the `RVIServer`.
 3. Run the `CANRouter`, `CDLDaemon`, `Cluster`.
+   * `CANRouter` store the vehicleData when the VehicleSimulator is operated.
+   * `CDLDaemon` collects  vehicle data when the vehicle data is stored using VSI.
 ### Operated device
 #### DeskTop
 * GENIVI VehicleSimulator
@@ -30,6 +32,7 @@ There are some modules that can operate with `CDL-Daemon` such as `Cluster`, `CA
 * RVIServer
 
 Installation and Run categories are on the page of each module.
+
 Please refer to page for more detail.
   
   
