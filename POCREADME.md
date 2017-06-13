@@ -16,6 +16,9 @@ There are some modules that can operate with `CDL-Daemon` such as `Cluster`, `CA
   * Display the transferred data(file of JSON format) with a graph (Historical View).
   
 ## Operation
+1. Run the `VehicleSimulator`.
+2. Run the `RVIServer`.
+3. Run the `CANRouter`, `CDLDaemon`, `Cluster`.
 ### Operated device
 #### DeskTop
 * GENIVI VehicleSimulator
@@ -26,6 +29,7 @@ There are some modules that can operate with `CDL-Daemon` such as `Cluster`, `CA
 #### DeskTop
 * RVIServer
 
-
+Installation and Run categories are on the page of each module.
+Please refer to page for more detail.
   
   
