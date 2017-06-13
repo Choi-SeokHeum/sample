@@ -18,6 +18,7 @@ CANRouter Application is implemented and tested on:
 ### Precondition
 To build CANRouter, following package are required
 * automotive-dlt 2.15 (or later)
+* VSI
 
 ### Clone Source Codes
 Clone source codes from GENIVI GitHub using following command in the terminal window:
@@ -25,9 +26,9 @@ Clone source codes from GENIVI GitHub using following command in the terminal wi
 #### CDL
 
       $ git clone https://github.com/GENIVI/cat-data-logger.git
-    
+
       $ git checkout abstract-component-poc
-      
+
 ### Build & Install
 #### CANRouter build & install
 In CANRouter directory of CDL, build & install using following command:
@@ -38,18 +39,18 @@ Build :
       $ qmake -r -spec linux-g++
       $ make
       $ make install
-      
+
 ##### Target Board
 Set the Yocto ADT environment:
 
       $  source ${RPI_ADT_DIR}/environment-setup-cortexa7hf-neon-vfpv4-poky-linux-gnueabi
-      
+
 Build:
-      
+
       $ qmake
       $ make
       $ make install
-    
+
 After the installation, you can find binary(CANRouter) in `deploy/arm` or `deploy/x86` directory.
 
 ## Usage
@@ -59,16 +60,16 @@ After the installation, you can find binary(CANRouter) in `deploy/arm` or `deplo
 Prepare one terminal window and navigate to the `deploy/x86` directory.
 
       $ cd deploy/x86
-      
+
 Run CANRouter on terminal:
-      
+
       $ ./CANRouter
-      
+
 #### Build on Target Board Environment
 If you build the CANRouter on Target Board Environment, navigate to the `deploy/arm` directory.
 
       $ cd deploy/arm
 
 Copy the CANRouter binary to target board and Run:
-      
+
       $ ./CANRouter
