@@ -10,7 +10,7 @@ Cluster Application is implemented and tested on:
 * Qt 5.6.1 (for test application)
 
 ### Precondition
-To build DataProvider, following package are required
+To build cluster-hmi-applciation, following package are required
 * CommonAPI 3.1.5 (including DBus and SOME/IP Runtime)
 * RaspberryPi SDK (build environment)
 
