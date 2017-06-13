@@ -15,6 +15,7 @@ Cluster Application is implemented and tested on:
 ### Precondition
 To build cluster-hmi-applciation, following package are required
 * CommonAPI 3.1.5 (including DBus and SOME/IP Runtime)
+* automotive-dlt 2.15 (or later)
 
 ### Clone Source Codes
 Clone source codes from GENIVI GitHub using following command in the terminal window:
@@ -26,7 +27,7 @@ Clone source codes from GENIVI GitHub using following command in the terminal wi
       $ git checkout abstract-component-poc
       
 ### Build & Install
-#### Cluster Application
+#### Cluster Application build & install
 In cluster-hmi-application directory of CDL, build & install using following command:
 
 ##### Desktop
@@ -47,13 +48,13 @@ Build:
       $ make
       $ make install
     
-After the installation, you can find binary(cluster-hmi-application) in deploy directory.
+After the installation, you can find binary(cluster-hmi-application) in deploy/arm or deploy/x86 directory.
 
 ## Usage
 
 ### Run
 #### Build on Qt Environment
-If you build the cluster-hmi-application on Qt, prepare one terminal window and navigate to the `deploy/x86` directory.
+Prepare one terminal window and navigate to the `deploy/x86` directory.
 
       $ cd deploy/x86
       
@@ -62,10 +63,10 @@ Run cluster-hmi-application on terminal:
       $ ./cluster-hmi-application
       
 #### Build on Target Board Environment
-If you build the cluster-hmi-application on RaspberryPi, prepare one terminal window and navigate to the `deploy/arm` directory.
+If you build the cluster-hmi-application on target board environment, prepare one terminal window and navigate to the `deploy/arm` directory.
 
       $ cd deploy/arm
       
-Run cluster-hmi-application on target board:
+Copy cluster-hmi-application to target board and run:
       
       $ ./cluster-hmi-application
