@@ -23,4 +23,30 @@ Clone source codes from GENIVI GitHub using following command in the terminal wi
     
       $ git checkout abstract-component-poc
       
-##### Build & Install
+### Build & Install
+#### Cluster Application
+In cluster-hmi-application directory of CDL, build & install using following command:
+
+      $ qmake -r -spec linux-g++
+      $ make
+      $ make install
+
+After the installation, you can find binary(cluster-hmi-application) in deploy directory.
+
+## Usage
+
+### Run
+#### Build on Qt
+If you build the cluster-hmi-application on Qt, prepare one terminal window and navigate to the `deploy/x86` directory.
+
+      $ cd deploy/x86
+      
+#### Build on RaspberryPi
+If you build the cluster-hmi-application on RaspberryPi, prepare one terminal window and navigate to the `deploy/arm` directory.
+
+      $ cd deploy/arm
+      
+Run cluster-hmi-application on terminal:
+      
+      $ ./cluster-hmi-application
+      
