@@ -17,7 +17,8 @@ There are some modules that can operate with `CDL-Daemon` such as `Cluster`, `CA
   
 ## Operation
 ### Operated device
-
+#### DeskTop
+* GENIVI VehicleSimulator
 #### RaspberryPi 3
 * CAN Router
 * CDLDaemon
