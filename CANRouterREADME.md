@@ -26,7 +26,7 @@ Clone source codes from GENIVI GitHub using following command in the terminal wi
 
       $ git clone https://github.com/GENIVI/cat-data-logger.git
     
-      $ git checkout abstract-componet-poc
+      $ git checkout abstract-component-poc
       
 ### Build & Install
 #### CANRouter build & install
