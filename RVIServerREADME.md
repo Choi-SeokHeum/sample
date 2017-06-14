@@ -32,7 +32,7 @@ In RVIServer directory of CDL, build & install using following command:
     $ make
     $ sudo make install
 
-After the installation, you can find binary(RVIServer) and other file(rvi_service.py) for transferring the JSON file in `/usr/lib/rvi_core` directory.
+After the installation, you can find binary(`RVIServer`) and other file(`rvi_service.py`) for transferring the JSON file in `/usr/lib/rvi_core` directory.
 
 # Usage
 
