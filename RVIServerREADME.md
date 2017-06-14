@@ -46,6 +46,6 @@ Run RVIServer on the terminal.
 
         $ ./RVIServer
 
-RVIServer application creates two widgets( File Managing view, Historical view ) displayed on windows.
+When running `RVIServer`, two widgets( File Managing view, Historical view ) are displayed on windows.
 
 In the `deploy` directory of RVIServer, you can show the transferred JSON format files in `results` directory.
