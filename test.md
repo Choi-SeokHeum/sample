@@ -19,6 +19,15 @@ There are some modules that can operate with `CDL-Daemon` such as `Cluster`, `CA
   * Received the vehicle data(speed, rpm) from `OnBoardProvider` in the `CDLDaemon` using DBus.
   * Provide the vehicle data to cluster-hmi-application.
   
+## Precondition
+* Vehicle Simulator
+    * Download pre-build binary :
+       * [dropbox](https://www.dropbox.com/sh/jh3pyz7umhtmv0p/AABdQmwAl7LWcT4qlXvhUuS3a?dl=0)   
+    * Run :
+       * [Unity 5.3.4](https://unity3d.com/kr/)
+    * Reference :
+       * [GENIVI Vehicle Simulator Project Page](https://at.projects.genivi.org/wiki/display/PROJ/GENIVI+Vehicle+Simulator)
+      
 ## Operation
 1. Run the `VehicleSimulator`.
 2. Run the `RVIServer`.
