@@ -15,7 +15,7 @@ To build RVIServer, following package are required
 * Boost 1.54 (or later)
     * system, thread, date_time, iostreams
 * python 2.7.6
-* rvi_core 0.5.1
+* [rvi_core 0.5.1](https://github.com/GENIVI/rvi_core/releases)
 
 ### Clone Source Codes
 Clone source codes from GENIVI GitHub using following command in the terminal window:
