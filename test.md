@@ -1,45 +1,48 @@
-# Cluster-HMI-Application
-Cluster is an application displaying the infomation of vehicle such as fuel, speed, RPM, etc.
-It communicates with the OnBoardProvider using DBus.
+# RVIServer
 
-## Installation
-### Tested Environment
-Cluster Application is implemented and tested on:
+RVIServer is an application implemented as a server using RVI and displays the result of the transferred files with graph.
+
+# Installation
+
+### tested Environment
+RVIServer is implemented and tested on:
 * VMWare Workstation 12 Player (12.1.1 build-3770994)
 * Ubuntu 14.04 64bit
 * Qt 5.6.1 (for test application)
 
 ### Precondition
-To build cluster-hmi-applciation, following package are required
-* CommonAPI 3.1.5 (including DBus and SOME/IP Runtime)
-* automotive-dlt 2.15 (or later)
+To build RVIServer, following package are required
+* Boost 1.54 (or later)
+    * system, thread, date_time, iostreams
+* python 2.7.6
+* rvi_core 0.5.1
 
 ### Clone Source Codes
 Clone source codes from GENIVI GitHub using following command in the terminal window:
-
 #### CDL
 
-      $ git clone https://github.com/GENIVI/cat-data-logger.git
+        $ git clone https://github.com/GENIVI/cat-data-logger.git
 
-      $ git checkout abstract-component-poc
+        $ git checkout abstract-component-poc
 
 ### Build & Install
-#### Cluster Application build & install
-In cluster-hmi-application directory of CDL, build & install using following command:
+In RVIServer directory of CDL, build & install using following command:
 
-      $ qmake -r -spec linux-g++
-      $ make
-      $ make install
+    $ qmake -r -spec linux-g++
+    $ make
+    $ sudo make install
 
-After the installation, you can find binary(cluster-hmi-application) in `deploy/x86` directory.
+After the installation, you can find binary(`RVIServer`) and other file(`rvi_service.py`) for transferring the JSON file in `/usr/lib/rvi_core` directory.
 
-## Usage
+# Usage
+
 ### Run
-#### Build on Qt Environment
-Prepare one terminal window and navigate to the `deploy/x86` directory.
+Prepare a terminal window and navigate to the deploy directory of RVIServer.
 
-      $ cd deploy/x86
+        $ ./RVIServer
 
-Run `cluster-hmi-application` on terminal:
+If the `RVIServer` starts, displayed the name of service such as start, data, finish on terminal. Then you should fill in the service name at the `rvi_call.py` located in `/usr/lib/rvi_core` directory.
 
-      $ ./cluster-hmi-application
+When running `RVIServer`, two widgets( File Managing view, Historical view ) are displayed on windows.
+
+In the `deploy` directory of RVIServer, you can show the transferred JSON format files in `results` directory.
