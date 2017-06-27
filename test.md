@@ -16,7 +16,7 @@ CANRouter Application is implemented and tested on:
 To build CANRouter, following package are required
 * automotive-dlt 2.15 (or later)
 * VSI
-   * Install & Build : [CDLDaemon README](https://github.com/GENIVI/car-data-logger/tree/abstract-component-poc/CDLDaemon/README.md)
+   * Install & Build : [VSI Build(CDLDaemon README)](https://github.com/GENIVI/car-data-logger/tree/abstract-component-poc/CDLDaemon/README.md)
 
 ### Clone Source Codes
 Clone source codes from GENIVI GitHub using following command in the terminal window:
