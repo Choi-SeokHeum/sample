@@ -1,52 +1,52 @@
+# CANRouter
+CANRouter is an application operating between GENIVI VehicleSimulator and CDLDaemon.
 
-# Car Data Logger For PoC
+It is implemented as a Server using socket to communicate with the VehicleSimulator(Implemented Socket Client).
 
-This is the CDL proof of concept for AC.
+After receiving the vehicle data(speed, rpm) from VehicleSimulator, it stores them using VSI.
 
-There are some modules that can operate with `CDL-Daemon` such as `Cluster`, `CAN Router`, `RVIServer`.
+## Installation
+### Tested Environment
+CANRouter Application is implemented and tested on:
+* VMWare Workstation 12 Player (12.1.1 build-3770994)
+* Ubuntu 14.04 64bit
+* Qt 5.6.1 (for test application)
 
-- CAN Router
-  * Store the vehicle data received from the `GENIVI VehicleSimulator` using `VSI`.
-- CDLDaemon
-  * Collect, Store, Provide with On/Off-BoardProvider vehicle Data.
-- Cluster
-  * Received the vehicle data from vehicle-data-consumer.
-  * Display the vehicle data(speed, rpm).
-- RVIServer
-  * Receive the data(file of JSON format) from the `OffBoardProvider` using `RVI`.
-  * Display the transferred data(file of JSON format) with a graph (Historical View).
-- vehicle-data-consumer
-  * Received the vehicle data(speed, rpm) from `OnBoardProvider` in the `CDLDaemon` using DBus.
-  * Provide the vehicle data to cluster-hmi-application.
-  
-## Precondition
-* Vehicle Simulator
-    * Download pre-build binary :
-       * [dropbox](https://www.dropbox.com/sh/jh3pyz7umhtmv0p/AABdQmwAl7LWcT4qlXvhUuS3a?dl=0)   
-    * Run :
-       * [Unity 5.3.4](https://unity3d.com/kr/)
-    * Reference :
-       * [GENIVI Vehicle Simulator Project Page](https://at.projects.genivi.org/wiki/display/PROJ/GENIVI+Vehicle+Simulator)
-      
-## Operation
-1. Run the `VehicleSimulator`.
-2. Run the `RVIServer`.
-3. Run the `CANRouter`, `CDLDaemon`, `vehicle-data-consumer`, `Cluster`.
-  * `CANRouter` stores the vehicleData after the VehicleSimulator runs.
-  * `CDLDaemon` starts to collect vehicle data after the vehicle data is stored using VSI from `CANRouter`.
-  * `vehicle-data-consumer` registers to `OnBoardProvider` in `CDLDaemon` to receive the vehicle data using dbus.
+### Precondition
+To build CANRouter, following package are required
+* automotive-dlt 2.15 (or later)
+* VSI
 
-### Operated device
-#### DeskTop
-* GENIVI VehicleSimulator
-#### RaspberryPi 3
-* CAN Router
-* CDLDaemon
-* vehicle-data-consumer
-* Cluster
-#### DeskTop
-* RVIServer
+### Clone Source Codes
+Clone source codes from GENIVI GitHub using following command in the terminal window:
 
-Installation and Run categories are on the page of each module.
+#### CDL
 
-Please refer to page for more detail.
+      $ git clone https://github.com/GENIVI/cat-data-logger.git
+
+      $ git checkout abstract-component-poc
+
+### Build & Install
+#### CANRouter build & install
+In CANRouter directory of CDL, build & install using following command:
+
+##### Desktop
+Build :
+
+      $ qmake -r -spec linux-g++
+      $ make
+      $ make install
+
+After the installation, you can find binary(CANRouter) in `deploy/x86` directory.
+
+## Usage
+
+### Run
+#### Build for testing on Desktop
+Prepare one terminal window and navigate to the `deploy/x86` directory.
+
+      $ cd deploy/x86
+
+Run CANRouter on terminal:
+
+      $ ./CANRouter
