@@ -14,7 +14,7 @@ To build vehicle-data-consumer, following package are required
 * CommonAPI 3.1.5 (including DBus and SOME/IP Runtime)
 * automotive-dlt 2.15 (or later)
 * Boost 1.54 (or later)
-        * log, system, thread
+   * log, system, thread
 ### Clone Source Codes
 Clone source codes from GENIVI GitHub using following command in the terminal window:
 
