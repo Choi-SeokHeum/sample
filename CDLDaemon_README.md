@@ -20,11 +20,12 @@ CDL Daemon is implemented and tested on:
 ### Precondition
 To build CDL Daemon, following package are required
 * VSI
-* sqlite 3.15.0
+* sqlite 3.8.2 (or later)
 * Boost 1.54 (or later)
     * system, thread, log, filesystem, date_time, iostreams
 * CommonAPI 3.1.5 (including DBus and Some/IP Runtime)
-* python 2.7
+* python 2.7.6
+* rvi_core 0.5.1
 
 ### Clone Source Codes
 Clone source codes from GENIVI GitHub using following command in the terminal window:
@@ -67,9 +68,10 @@ After the installation, you can find a binary(CDLDaemon) and other files for con
 
 ### Run
 Prepare a terminal window and navigate to the deploy directory of test.
-Before run application, run the `RVIServer` on the CDL(car-data-logger) to confirm the transferred JSON file between CDLDaemon and external server.
+Before run the CDLDaemon application, run the `RVIServer` on the CDL(car-data-logger) to confirm the transferred JSON file between CDLDaemon and external server.
 
 Run CDLDaemon on the terminal.
 
         $ ../deploy
         $ ./CDLDaemon
+

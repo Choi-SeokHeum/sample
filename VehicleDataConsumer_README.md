@@ -1,20 +1,20 @@
 # Vehicle-Data-Consumer
 vehicle-data-consumer is connected with `OnBoardProvider` in `CDLDaemon` to receive the vehicle data using dbus.
-After receiving the vehicle data, provides to cluster-hmi-applpication.
+After receiving the vehicle data, provides them to cluster-hmi-applpication.
 
 ## Installation
 ### Tested Environment
 vehicle-data-consumer is implemented and tested on:
 * VMWare Workstation 12 Player (12.1.1 build-3770994)
 * Ubuntu 14.04 64bit
-* Qt 5.6.1 (for test application)
+* Qt 5.6.1
 
 ### Precondition
 To build vehicle-data-consumer, following package are required
 * CommonAPI 3.1.5 (including DBus and SOME/IP Runtime)
-* automotive-dlt 2.15 (or later)
 * Boost 1.54 (or later)
    * log, system, thread
+
 ### Clone Source Codes
 Clone source codes from GENIVI GitHub using following command in the terminal window:
 
@@ -32,7 +32,7 @@ In vehicle-data-consumer directory of CDL, build & install using following comma
       $ make
       $ make install
       
-After the installation, you can find binary(VehicleDataConsumer) in deploy/x86 directory.
+After the installation, you can find binary(VehicleDataConsumer) in `deploy/x86` directory.
 
 ## Usage
 
@@ -44,4 +44,5 @@ Prepare one terminal window and navigate to the `deploy/x86` directory.
       
 Run vehicle-data-consumer on terminal:
       
-      $ ./vehicle-data-consumer
+      $ ./VehicleDataConsumer
+

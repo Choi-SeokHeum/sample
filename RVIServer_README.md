@@ -8,14 +8,14 @@ RVIServer is an application implemented as a server using RVI and displays the r
 RVIServer is implemented and tested on:
 * VMWare Workstation 12 Player (12.1.1 build-3770994)
 * Ubuntu 14.04 64bit
-* Qt 5.6.1 (for test application)
+* Qt 5.6.1
 
 ### Precondition
-To build VSS Data Collector, following package are required
-* VSI
+To build RVIServer, following package are required
 * Boost 1.54 (or later)
     * system, thread, date_time, iostreams
-* python 2.7
+* python 2.7.6
+* [rvi_core 0.5.1](https://github.com/GENIVI/rvi_core/releases)
 
 ### Clone Source Codes
 Clone source codes from GENIVI GitHub using following command in the terminal window:
@@ -38,14 +38,13 @@ After the installation, you can find binary(`RVIServer`) and other file(`rvi_ser
 
 ### Run
 Prepare a terminal window and navigate to the deploy directory of RVIServer.
-Before run applications, add library search path for `VSI` and `VSSDataCollector` library to the `LD_LIBRARY_PATH` using following command in terminal:
 
-        $ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
-
-Run RVIServer on the terminal.
-
+        $ cd deploy
         $ ./RVIServer
+
+If the `RVIServer` starts, displayed the name of service such as start, data, finish on terminal. Then you should fill in the service name at the `rvi_call.py` located in `/usr/lib/rvi_core` directory.
 
 When running `RVIServer`, two widgets( File Managing view, Historical view ) are displayed on windows.
 
 In the `deploy` directory of RVIServer, you can show the transferred JSON format files in `results` directory.
+
