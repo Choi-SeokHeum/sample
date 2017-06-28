@@ -25,7 +25,7 @@ To build CDL Daemon, following package are required
     * system, thread, log, filesystem, date_time, iostreams
 * CommonAPI 3.1.5 (including DBus and Some/IP Runtime)
 * python 2.7.6
-* rvi_core 0.5.1
+* [rvi_core 0.5.1](https://github.com/GENIVI/rvi_core/releases)
 
 ### Clone Source Codes
 Clone source codes from GENIVI GitHub using following command in the terminal window:
