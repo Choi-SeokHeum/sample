@@ -28,9 +28,9 @@ Clone source codes from GENIVI GitHub using following command in the terminal wi
 ### Build & Install
 In RVIServer directory of CDL, build & install using following command:
 
-    $ qmake -r -spec linux-g++
-    $ make
-    $ sudo make install
+        $ qmake -r -spec linux-g++
+        $ make
+        $ sudo make install
 
 After the installation, you can find binary(`RVIServer`) and other file(`rvi_service.py`) for transferring the JSON file in `/usr/lib/rvi_core` directory.
 
