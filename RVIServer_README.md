@@ -39,12 +39,24 @@ After the installation, you can find binary(`RVIServer`) and other file(`rvi_ser
 ### Run
 Prepare a terminal window and navigate to the deploy directory of RVIServer.
 
-        $ cd deploy
+Run the `RVIServer` on the terminal.
+
         $ ./RVIServer
 
-If the `RVIServer` starts, displayed the name of service such as start, data, finish on terminal. Then you should fill in the service name at the `rvi_call.py` located in `/usr/lib/rvi_core` directory.
+When the `RVIServer` starts, you can see the node infomation of service on terminal.
 
-When running `RVIServer`, two widgets( File Managing view, Historical view ) are displayed on windows.
+Then you should replace the node information in the `rvi_call.py` located in `/usr/lib/rvi_core` directory with generated node information.
 
-In the `deploy` directory of RVIServer, you can show the transferred JSON format files in `results` directory.
+* Generated Node URL :
 
+        $ genivi.org/node/17f46d5a-e91f-438b-bc9b-55af49be86f6/transmission_data
+        $ genivi.org/node/17f46d5a-e91f-438b-bc9b-55af49be86f6/transmission_start
+        $ genivi.org/node/17f46d5a-e91f-438b-bc9b-55af49be86f6/transmission_finish
+
+* Replaced `rvi_call.py` :
+
+        $ transmission_start_service = "genivi.org/node/17f46d5a-e91f-438b-bc9b-55af49be86f6/transmission_start"
+        $ transmission_send_data_service = "genivi.org/node/17f46d5a-e91f-438b-bc9b-55af49be86f6/transmission_data"
+        $ transmission_finish_service = "genivi.org/node/17f46d5a-e91f-438b-bc9b-55af49be86f6/transmission_finish"
+
+After that, you can run the `CDLDaemon`, and `RVIServer` will receive the sample JSON files.
