@@ -43,7 +43,7 @@ Run the `RVIServer` on the terminal.
 
         $ ./RVIServer
 
-When the `RVIServer` starts, you can see the node infomation of service on terminal.
+When the `RVIServer` starts, you can see the node information of service on terminal.
 
 Then you should replace the node information in the `rvi_call.py` located in `/usr/lib/rvi_core` directory with generated node information.
 
