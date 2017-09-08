@@ -5,7 +5,7 @@ CONFIG += c++11
 
 SOURCES += \
 main.cpp\
-activity.bpp\
+activity.cpp\
 activityLauncher.cpp\
 activitymanager.cpp\
     activitylist.cpp \
