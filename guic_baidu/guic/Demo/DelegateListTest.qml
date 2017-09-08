@@ -3,7 +3,7 @@ import QtQuick 2.6
 import IVIS.Component 1.0
 import "./ListView"
 
-Item {
+Item { /// tttttt ///
     id: root
     objectName: "root"
     width: 1205
