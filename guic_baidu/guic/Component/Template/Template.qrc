@@ -1,0 +1,45 @@
+<RCC>
+    <qresource prefix="/Template">
+        <file>TTouchArea.qml</file>
+        <file>TMagneticTouchArea.qml</file>
+        <file>TControl.qml</file>
+        <file>TButton.qml</file>
+        <file>TCheckButton.qml</file>
+        <file>TRadioButton.qml</file>
+        <file>TPushButton.qml</file>
+        <file>TSlider.qml</file>
+        <file>TLinearSlider.qml</file>
+        <file>TScrollBar.qml</file>
+        <file>TLinearScrollBar.qml</file>
+        <file>TProgressBar.qml</file>
+        <file>TIndicator.qml</file>
+        <file>TBusyIndicator.qml</file>
+        <file>TStateIndicator.qml</file>
+        <file>TLabel.qml</file>
+        <file>TMarqueeLabel.qml</file>
+        <file>TPlayTimeLabel.qml</file>
+        <file>TAnalogClock.qml</file>
+        <file>TClock.qml</file>
+        <file>TListView.qml</file>
+        <file>AbstractDelegate.qml</file>
+        <file>TStateButton.qml</file>
+        <file>TSwipeView.qml</file>
+        <file>AbstractLayout.qml</file>
+        <file>TTabBar.qml</file>
+        <file>TTabButton.qml</file>
+        <file>FocusGroupDefine.qml</file>
+        <file>FocusGroupManager.qml</file>
+        <file>FocusGroup.qml</file>
+        <file>TLaneGuidance.qml</file>
+        <file>TLaneImageArea.qml</file>
+        <file>TTurnByTurn.qml</file>
+        <file>TSaftyAlert.qml</file>
+        <file>StackView.qml</file>
+        <file>StackViewTransition.qml</file>
+        <file>PopTransition.qml</file>
+        <file>PushTransition.qml</file>
+        <file>TRealTimeSlider.qml</file>
+        <file>TRTSlider.qml</file>
+        <file>TDigitalClock.qml</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,5 @@
+include(Button/Button_Baidu.pri)
+include(Clock/Clock_Baidu.pri)
+include(Slider/Slider_Baidu.pri)
+include(Flyer/Flyer_Baidu.pri)
+include(ScrollBar/ScrollBar_Baidu.pri)

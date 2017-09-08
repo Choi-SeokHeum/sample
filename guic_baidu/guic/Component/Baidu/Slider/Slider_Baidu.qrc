@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/Component/Slider">
+        <file>RealTimeSlider.qml</file>
+        <file>TestSliderScreen.qml</file>
+    </qresource>
+</RCC>

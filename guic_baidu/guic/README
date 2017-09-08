@@ -1,0 +1,10 @@
+How To Run The Demo project
+---------------------------
+
+Place the libguic.so file and the qmldir file after the build of 
+the Component project into IVIS / Component in the path below $$ [QT_INSTALL_QML].
+
+example) opt/qt5/qml/IVIS/Component
+
+If you write 'message ($$ [QT_INSTALL_QML]') in your project's .pro file, 
+you can check the absolute path of the corresponding directory through the log at build time.

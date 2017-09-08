@@ -1,0 +1,2 @@
+module IVIS.Component
+plugin guic

@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/Component/Clock">
+        <file>DigitalClock.qml</file>
+        <file>TestDigitalClockScreen.qml</file>
+    </qresource>
+</RCC>

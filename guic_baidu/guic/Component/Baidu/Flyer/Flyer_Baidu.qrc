@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/Component/Flyer">
+        <file>LaneGuidance.qml</file>
+        <file>TurnByTurn.qml</file>
+        <file>SaftyAlert.qml</file>
+        <file>TestNaviScreen.qml</file>
+        <file>WarningGuidance.qml</file>
+    </qresource>
+</RCC>

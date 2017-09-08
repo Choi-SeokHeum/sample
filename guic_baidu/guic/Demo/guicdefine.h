@@ -1,0 +1,48 @@
+#ifndef SETUPDEFINE_H
+#define SETUPDEFINE_H
+
+
+#include <QObject>
+
+class GUICDefine : public QObject
+{
+    Q_OBJECT
+
+public:
+    enum Activity :quint32
+    {
+        ACTIVITY_LIST=0,
+        ACTIVITY_FOCUSBUTTON,
+        ACTIVITY_GROUP,
+        ACTIVITY_POPUPMENU,
+        ACTIVITY_TURNLIST,
+
+//        ACTIVITY_BUTTON=0,
+//        ACTIVITY_STATEBUTTON,
+//        ACTIVITY_CHECKBUTTON,
+//        ACTIVITY_RADIOBUTTON,
+//        ACTIVITY_SLIDER,
+//        ACTIVITY_PROGRESSBAR,
+//        ACTIVITY_LISTVIEW,
+//        ACTIVITY_LABEL,
+//        ACTIVITY_CLOCK,
+//        //ACTIVITY_TOUCHAREA,
+//        ACTIVITY_INDICATOR,
+//        ACTIVITY_VIRTUALKEYBOARD,
+//        ACTIVITY_SWIPEVIEW,
+//        ACTIVITY_FOCUSMANAGER,
+//        ACTIVITY_LANEGUIDANCE,
+//        ACTIVITY_TURNBYTURN,
+//        ACTIVITY_SAFTYALERT,
+//        ACTIVITY_STACKVIEW,
+//        ACTIVITY_ALBUMART,
+//        ACTIVITY_LIVEBACKGROUND,
+//        ACTIVITY_ALPHABETICALSCROLLBAR,
+
+        ACTIVITY_LAUNCHER=50
+    };
+    Q_ENUM(Activity)
+};
+
+#endif // SETUPDEFINE_H
+

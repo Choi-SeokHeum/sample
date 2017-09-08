@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/Component/ScrollBar">
+	<file>LinearScrollBar.qml</file>
+	<file>CurvedScrollBar.qml</file>
+    </qresource>
+</RCC>
