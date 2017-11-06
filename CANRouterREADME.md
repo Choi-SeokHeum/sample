@@ -38,7 +38,7 @@ In `can_router` directory of CDL, build & install using following command:
 
 After the installation, you can find binary(can_router) in `deploy/x86` directory.
 
-##### CANdevStudio build
+#### CANdevStudio build
 After clone the `CANdevStudio` from the GENIVI github, copy patch files in `cdl_daemon` directory to `CANdevStudio` directory and apply patches.
 * modified_can_signal_to_cdl_daemon.patch
 * genivi_17amm_script.patch
@@ -49,12 +49,8 @@ After clone the `CANdevStudio` from the GENIVI github, copy patch files in `cdl_
 After that, build the `CANdevStudio` refer to the `README.md`(CANdevStudio).
 
 ## Usage
-
 ### Run
-#### Build for testing on Desktop
-## Usage
-
-##### CANdevStudio
+### CANdevStudio
 Before run the `CANdevStudio`, prepare two terminals window and following command:
 terminal_1:
 	$ sudo slcan_attach -o -w -f -s3 -c -n can0 /dev/ttyUSB0
@@ -65,7 +61,7 @@ terminal_2:
 
 Run `CanDevStudio` on the terminal_2.
 
-##### can_router 
+### can_router 
 Prepare one terminal window and navigate to the `deploy/x86` directory.
 
       $ cd deploy/x86
