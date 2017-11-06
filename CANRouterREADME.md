@@ -52,10 +52,13 @@ After that, build the `CANdevStudio` refer to the `README.md`(CANdevStudio).
 ### Run
 ### CANdevStudio
 Before run the `CANdevStudio`, prepare two terminals window and following command:
+
 terminal_1:
+
 	$ sudo slcan_attach -o -w -f -s3 -c -n can0 /dev/ttyUSB0
 	
 terminal_2:
+
 	$ sudo modprobe vcan
 	$ sudo ip link set can0 up
 
